@@ -1,0 +1,22 @@
+{
+    "name": "school-fees",
+    "version": "0.1.0",
+    "kernel": "^1.19.0",
+    "solves": "school.fees",
+    "type": "module",
+    "requires": [
+        "database.management",
+        "audit.trail",
+        "school.people",
+        "school.classes"
+    ],
+    "exposes": [
+        "Plugins\\SchoolFees\\API\\Contracts\\SchoolFeesContract"
+    ],
+    "routes": [],
+    "emits": [],
+    "listens": [],
+    "files": [],
+    "documentation": "Fee configuration and the payments ledger. Owns the ONE FeeResolver: individual (0 = exemption) -> class+term -> class+type -> boarding.",
+    "config": []
+}
